@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño de la web </title>
+  <!-- Aqui se incluye Tailwind CSS desde su CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <!-- Contenedor principal de todo el contenido 
+    max-w-xs`: Limita el ancho máximo del contenedor a un tamaño pequeño (ideal para dispositivos pequeños).
+    mx-auto`: Aplica márgenes automáticos horizontales para centrar el contenedor.
+    text-center`: Alinea el texto al centro dentro del contenedor. 
+    -->
+  <div class="max-w-xs mx-auto">
+
+    <!--Título superior de la imagen
+    mb-4`: Añade un margen inferior de 1 rem (16px) para separar el título de la imagen.
+    text-xl`: Define el tamaño de la fuente como "extra grande" (20px).
+    font-bold`: Aplica un peso de fuente fuerte (negrita).
+    text-gray-900`: Establece un color gris oscuro para el texto. 
+      -->
+
+    <h1 class="mb-4 text-xl font-bold text-gray-900">
+          Información: Bollo de pezcado
+    </h1>
+
+    <!-- Contenedor de la imagen 
+     rounded-lg`: Redondea las esquinas del contenedor.
+     overflow-hidden`: Oculta cualquier contenido que se salga del contenedor.
+    -->
+
+    <div class="rounded-lg overflow-hidden shadow-md">
+
+    <!--
+     class="w-full":
+     w-full`: La imagen ocupa todo el ancho del contenedor.
+     `src`: URL de la imagen (en este caso, un marcador de posición).
+     -->
+
+      <img 
+        src="https://img.goraymi.com/2017/12/15/44a4d71e38c9fed068563fa8f67e5a43_xl.jpg" 
+        alt="Descripción de la imagen"
+        class="w-full"
+      />
+    </div>
+
+    <!-- Título debajo de la imagen 
+     `mt-4`: Añade un margen superior de 1 rem (16px) para separar el título de la imagen.
+     `text-lg`: Define el tamaño de la fuente como "grande" (18px).
+     -->
+
+    <h2 class="mt-4 text-center text-lg font-semibold text-gray-800">
+        El bollo de pescado es uno de los platos típicos de la costa ecuatoriana y es muy popular con la gente que vive allí. 
+        Se parecen a los tamales, 
+        pero el principal ingrediente es el verde. 
+        Es una receta sencilla de hacer y se come en toda época del año.
+    </h2>
+  </div>
+</body>
+</html>
